@@ -1,0 +1,6 @@
+{
+	"appId": "com.UDistrital.earthquake",
+	"appName": "AlertaSismoCol",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

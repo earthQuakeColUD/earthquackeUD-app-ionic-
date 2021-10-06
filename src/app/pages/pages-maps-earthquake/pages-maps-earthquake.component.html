@@ -1,0 +1,36 @@
+<ion-header>
+  <div id="titulo">AlertaSismoCol</div>
+</ion-header>
+<ion-content>
+  <div id="map"></div>
+
+  <div id="div-item" class="div-item">
+    {{sismo["descripcion"]}}
+  </div>
+  <div id="div-items-EH">
+    <div id="div-items">
+      <div id="div-items-DD">
+        <div><label>LATITUD:</label></div>
+        <div><label>LONGITUD:</label></div>
+        <div><label>MAGNITUD:</label></div>
+        <div><label>FECHA:</label></div>
+      </div>
+      <div id="div-items-DD">
+        <div>{{sismo["latitud"]}}</div>
+        <div>{{sismo["longitud"]}}</div>
+        <div>{{sismo["magnitud"]}}</div>
+        <div>{{sismo["fecha"]}}</div>
+      </div>
+      <div>
+        <a (click)="clickComoActuar()">COMO ACTUAR</a>
+      </div>
+    </div>
+    <div id="div-items-H">
+      <a (click)="showHospitales()">HOSPITALES - MUNICIPIOS CERCANOS</a>
+      <div id="hospital"></div>
+    </div>
+  </div>
+</ion-content>
+<ion-footer>
+  UNIVERSIDAD DISTRITAL
+</ion-footer>
